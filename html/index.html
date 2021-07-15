@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script type="text/javascript" src="../js/anchor_to_top.js"></script>
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- header由一个logo和一个h1标题组-->
+    <div id="header">
+        <img src="../images/hammerAndSickle.png" />
+        <h1>庆祝中国共产党成立100周年</h1>
+    </div>
+    <div id="nav">
+        <!-- 第一个母导航栏（没有子导航栏） -->
+        <div class="NavsWithoutSubNavs">
+            <p><a href="index.html" target="_self">首页</a></p>
+        </div>
+        <!-- 第二个母导航栏（有4个子导航栏） -->
+        <div class="NavsWith4SubNavs">
+            <p>思想学习</p>
+            <ul>
+                <!-- 4个子导航栏 -->
+                <li><a href="Marxism-Leninism.html" target="_self">马克思列宁主义</a></li>
+                <li><a href="Maoism.html" target="_self">毛泽东思想</a></li>
+                <li><a href="Deng_Xiaoping_Theory.html" target="_self">邓小平理论</a></li>
+                <li><a href="Three_represent_important_ideas.html" target="_self">“三个代表”重要思想</a></li>
+            </ul>
+        </div>
+        <!-- 第三个母导航栏 -->
+        <div class="NavsWith4SubNavs">
+            <p>百年辉煌</p>
+            <ul>
+                <!-- 4个子导航栏 -->
+                <li><a href="history_of_ccp1.html" target="_self">民族独立</a></li>
+                <li><a href="history_of_ccp2.html" target="_self">人民解放</a></li>
+                <li><a href="history_of_ccp3.html" target="_self">国家富强</a></li>
+                <li><a href="history_of_ccp4.html" target="_self">人民幸福</a></li>
+            </ul>
+        </div>
+        <!-- 第四个母导航栏（有2个子导航栏） -->
+        <div class="NavsWith2SubNavs">
+            <p>重要会议</p>
+            <ul>
+                <!-- 2个子导航栏 -->
+                <li><a href="conference12.html" target="_self">中共十二大</a></li>
+                <li><a href="conference13.html" target="_self">中共十三大</a></li>
+            </ul>
+        </div>
+        <!-- 第五个母导航栏 -->
+        <div class="NavsWithoutSubNavs">
+            <p><a href="communists.html" target="_self">优秀党员</a></p>
+        </div>
+    </div>
+    <div id="banner">
+        <ul>
+            <!-- 展示第一张banner图片，其他隐藏。由js代码决定显示和隐藏 -->
+            <li class="banner_show"><img src="../images/banner1.jpg" alt=""></li>
+            <li class="banner_hide"><img src="../images/banner2.jpg" alt=""></li>
+            <li class="banner_hide"><img src="../images/banner3.jpg" alt=""></li>
+            <li class="banner_hide"><img src="../images/banner4.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="ph_news">
+        <a href="award.html" target="_blank">
+            <h1 class="ph_newsh" style="font-size: 40px;color: darkred;">
+                习近平在庆祝中国共产党成立100周年“七一勋章”颁授仪式上发表重要讲话 全文</h1>
+        </a>
+    </div>
+
+    <div class="wrap">
+        <ul class="list">
+            <li class="item active"><a href="award.html"><img src="../images/news1.png"></a></li>
+            <li class="item"><a href="award.html"><img src="../images/news2.png"></a></li>
+            <li class="item"><a href="award.html"><img src="../images/news3.png"></a></li>
+            <li class="item"><a href="award.html"><img src="../images/news4.png"></a></li>
+            <li class="item"><a href="award.html"><img src="../images/news5.png"></a></li>
+        </ul>
+        <ul class="pointlist">
+            <li class="point active" data-index='0'></li>
+            <li class="point" data-index='1'></li>
+            <li class="point" data-index='2'></li>
+            <li class="point" data-index='3'></li>
+            <li class="point" data-index='4'></li>
+        </ul>
+        <button type="button" class="btn" id="gopre">
+            < </button>
+                <button type="button" class="btn" id="gonext"> > </button>
+    </div>
+
+    <div class="news_list">
+        <ul class="news_listx">
+            <li style="font-size: 30px;padding-bottom: 10px;list-style-type: cambodian;text-align: initial;">要问要论</li>
+            <li class="news_lists"><a href="">国际社会热烈祝贺中国共产党建党一百周年</a></li>
+            <li class="news_lists"><a href="">百年大党正风华——写在中国共产党建党一百周年之际</a></li>
+            <li class="news_lists"><a href="">《人民标尺——从百年奋斗看中国共产党政治立场》智库报告发布</a></li>
+            <li class="news_lists"><a href="">《中国共产党成立100周年》纪念邮票和纪念封发布</a></li>
+            <li class="news_lists"><a href="">庆祝中国共产党成立100周年出版专题展开幕</a></li>
+            <li class="news_lists"><a href="">庆祝中国共产党成立100周年大会7月1日将隆重举行</a></li>
+            <li class="news_lists"><a href="">以习近平同志为核心的党中央引领亿万人民走向民族复兴纪实</a></li>
+        </ul>
+    </div>
+    <div id="video"><video src="../video/video.mkv" controls autoplay loop></video></div>
+
+    <div class="media">
+        媒体集萃
+    </div>
+
+    <div class="father">
+        <div class="child1">
+            <a href="http://news.cyol.com/node_67071.htm"><img style="width: 100%;height: 100%;"
+                    src="../images/std1.png"></a>
+        </div>
+        <div class="child2">
+            <a href="http://dangshi.people.cn/GB/437145/437401/index.html"><img style="width: 100%;height: 100%;"
+                    src="../images/std2.png"></a>
+        </div>
+        <div class="child3">
+            <a href="http://dangshi.people.com.cn/GB/151935/434349/index.html"><img style="width: 100%;height: 100%;"
+                    src="../images/std3.png"></a>
+        </div>
+        <div class="child4">
+            <a href="https://ebook.dswxyjy.org.cn/"><img style="width: 100%;height: 100%;" src="../images/std4.png"></a>
+        </div>
+    </div>
+    <!-- 2个圆圈 -->
+    <div id="addition_content">
+        <div> <img src="../images/circle.png" alt="">
+            <h3>9191万</h3>
+            <hr />
+            <p>9191万个党员</p>
+        </div>
+        <div> <img src="../images/circle.png" alt="">
+            <h3>468万</h3>
+            <hr />
+            <p>468万个基层党组织</p>
+        </div>
+    </div>
+    <!-- 小组介绍，点击进入详细页面 -->
+    <div id="footer"><a href="../html/introduce_ourselves.html">01-11组</a></div>
+    <!-- 回到顶部按钮，鼠标悬停时显示“回到顶部” -->
+    <img id="anchor_to_top" src="../images/anchor_to_top.png" alt="点击回到顶部" title="回到顶部">
+</body>
+
+</html>
+
+<script type="text/javascript">
+    var index = 0;
+    // 获取几个banner图片
+    var banner_list = document.getElementById("banner").getElementsByTagName("ul")[0].children;
+    // 每秒转换一张banner图片
+    var timer = window.setInterval(autoChange, 1000);
+    // 当前隐藏，下一张显示
+    function autoChange() {
+        banner_list[index].setAttribute("class", "banner_hide");
+        index = (index + 1) % banner_list.length;
+        banner_list[index].setAttribute("class", "banner_show");
+    }
+    for (var i = 0; i < banner_list.length; i++) {
+        //悬停就停止轮播
+        banner_list[i].onmouseover = function () {
+            window.clearInterval(timer);
+        }
+    }
+    for (var i = 0; i < banner_list.length; i++) {
+        //鼠标移开继续轮播
+        banner_list[i].onmouseout = function () {
+            timer = window.setInterval(autoChange, 1000);
+        }
+    }
+
+    var items = document.getElementsByClassName('item');
+    var gopreBtn = document.getElementById('gopre');
+    var gonextBtn = document.getElementById('gonext');
+
+    var Flag = 0;//flag表示第几张图片在展示
+
+    var clearActive = function () {
+        for (var i = 0; i < items.length; i++) {
+            items[i].className = 'item';
+        }
+        for (var i = 0; i < points.length; i++) {
+            points[i].className = 'point';
+        }
+    }
+
+    var goFlag = function () {
+        clearActive();
+        points[Flag].className = 'point active';
+        items[Flag].className = 'item active';
+    }
+
+    var gonext = function () {
+        if (Flag < 4) {
+            Flag++;
+        } else {
+            Flag = 0;
+        }
+
+        goFlag();
+    }
+
+    var gopre = function () {
+        if (Flag == 0) {
+            Flag = 4;
+        } else {
+            Flag--;
+        }
+        goFlag();
+    }
+
+    gonextBtn.addEventListener('click', function () {
+        gonext();
+    })
+    gopreBtn.addEventListener('click', function () {
+        gopre();
+    })
+
+    var points = document.getElementsByClassName('point');
+
+    for (var i = 0; i < points.length; i++) {
+        points[i].addEventListener('click', function () {
+            var pointFlag = this.getAttribute('data-index');
+            Flag = pointFlag;
+            goFlag();
+        })
+    }
+</script>
