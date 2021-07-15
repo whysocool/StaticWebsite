@@ -1,0 +1,94 @@
+/* 清楚默认样式，设置默认样式 */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 24px;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+/* 怪异盒子，设置宽度的时候包括进了border */
+div {
+  box-sizing: border-box;
+}
+
+body > div {
+  /* 水平居中 */
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 400px;
+  height: 600px;
+  /* 子元素paper、envelop、heart都是绝对定位，所以这个父元素要有一个定位方式，这里用relative */
+  position: relative;
+}
+
+#envelope {
+  /* 占满父元素 */
+  width: inherit;
+  height: inherit;
+  background-color: #f05654;
+  position: absolute;
+  /* envelop要覆盖paper */
+  z-index: 1;
+}
+
+#paper {
+  padding-top: 20px;
+  /* 占满父元素 */
+  width: inherit;
+  height: inherit;
+  background-color: wheat;
+  color: gray;
+  position: absolute;
+  /* 比envelope的小就行 */
+  z-index: 0;
+}
+
+#envelope:hover {
+  transform: rotate(15deg);
+  /* 比paper小就行 */
+  z-index: -1;
+}
+
+/* 正文字体 */
+#paper > h3 {
+  font-weight: lighter;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#heart {
+  /* 相对于body的第一个子元素div进行定位 */
+  position: absolute;
+  left: 200px;
+  top: 400px;
+  height: 200px;
+  width: 200px;
+  /* 设置动画，让心变大 */
+  animation: bling 0.5s infinite;
+}
+@keyframes bling {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* 2个矩形，通过border-radius改变形状，旋转后左右调整，使2个心看起来是一个。 */
+#left_heart,
+#right_heart {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: pink;
+  border-radius: 25px 2px 2px 25px;
+  top: 30px;
+}
+#left_heart {
+  transform: rotate(45deg);
+  left: 10px;
+}
+#right_heart {
+  transform: rotate(135deg);
+  left: 45px;
+}

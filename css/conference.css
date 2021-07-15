@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+/* 宽度占80%，居中 */
+#content {
+  width: 80%;
+  margin: 0 auto;
+}
+/* 设置标题 */
+#title {
+  font-size: 36px;
+}
+/* 图片与文字间设置间隔 */
+#content_word {
+  margin-top: 20px;
+}
+/* 段落格式 */
+#content_word p {
+  /* 覆盖掉通用选择器中的文字居中 */
+  text-align: left;
+  /* 段落开头缩进2个文字的宽度 */
+  text-indent: 2em;
+}

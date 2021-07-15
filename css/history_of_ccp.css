@@ -1,0 +1,40 @@
+#content {
+  width: 60%;
+  /* 子元素决定高度 */
+  overflow: hidden;
+  /* 水平居中 */
+  margin: 0 auto;
+}
+/* 设置新闻标题 */
+#content > h2 {
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: monospace;
+}
+/* 设置新闻标题下的水平线 */
+#content > hr {
+  border-top: 1px dashed gray;
+}
+/* 设置来源的样式 */
+#content > span {
+  font-family: cursive;
+  font-weight: lighter;
+}
+/* 设置副标题样式 */
+#content > h3 {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+}
+/* 正文样式 */
+#content > p {
+  text-align: left;
+  text-indent: 2em;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: Georgia, serif;
+}
+
+#content > img {
+  width: 100%;
+}
